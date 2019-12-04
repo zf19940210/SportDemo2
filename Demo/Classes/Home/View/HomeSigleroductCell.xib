@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="HomeSigleroductCell">
+            <rect key="frame" x="0.0" y="0.0" width="145" height="64"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="145" height="64"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="105" translatesAutoresizingMaskIntoConstraints="NO" id="ygW-Lx-uuP">
+                        <rect key="frame" x="0.0" y="0.0" width="145" height="64"/>
+                    </imageView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" red="0.85882352941176465" green="0.86274509803921573" blue="0.88235294117647056" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="ygW-Lx-uuP" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="L7c-bk-svg"/>
+                <constraint firstItem="ygW-Lx-uuP" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ZFx-BV-N03"/>
+                <constraint firstAttribute="bottom" secondItem="ygW-Lx-uuP" secondAttribute="bottom" id="qHN-2n-HqE"/>
+                <constraint firstAttribute="trailing" secondItem="ygW-Lx-uuP" secondAttribute="trailing" id="uYi-DC-qDS"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="SEy-5g-ep8"/>
+            <size key="customSize" width="145" height="64"/>
+            <connections>
+                <outlet property="bg_img" destination="ygW-Lx-uuP" id="a3e-2U-Gwr"/>
+            </connections>
+            <point key="canvasLocation" x="200.72463768115944" y="149.33035714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="105" width="430" height="240"/>
+    </resources>
+</document>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailContentCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="型号" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NTA-n5-vsh">
+                        <rect key="frame" x="10" y="14" width="145" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="NIKE 2019 " textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nyG-e0-8WO">
+                        <rect key="frame" x="165" y="14" width="145" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QPa-cW-Wwg">
+                        <rect key="frame" x="0.0" y="43.5" width="320" height="0.5"/>
+                        <color key="backgroundColor" white="0.87457493985140766" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="IaR-t6-ppH"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="QPa-cW-Wwg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="0mV-v1-InS"/>
+                    <constraint firstItem="nyG-e0-8WO" firstAttribute="width" secondItem="NTA-n5-vsh" secondAttribute="width" id="8iK-aY-rBy"/>
+                    <constraint firstItem="NTA-n5-vsh" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="I1V-30-YHf"/>
+                    <constraint firstItem="nyG-e0-8WO" firstAttribute="leading" secondItem="NTA-n5-vsh" secondAttribute="trailing" constant="10" id="O8f-ay-3z5"/>
+                    <constraint firstAttribute="trailing" secondItem="nyG-e0-8WO" secondAttribute="trailing" constant="10" id="aVd-wc-Uz5"/>
+                    <constraint firstAttribute="trailing" secondItem="QPa-cW-Wwg" secondAttribute="trailing" id="gef-i9-OCB"/>
+                    <constraint firstAttribute="bottom" secondItem="QPa-cW-Wwg" secondAttribute="bottom" id="kQY-qM-tCX"/>
+                    <constraint firstItem="nyG-e0-8WO" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="rsa-94-3M9"/>
+                    <constraint firstItem="NTA-n5-vsh" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="y9v-LC-BFe"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="content_lab" destination="nyG-e0-8WO" id="jYE-nj-Uv1"/>
+                <outlet property="title_lab" destination="NTA-n5-vsh" id="BM6-KG-834"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>

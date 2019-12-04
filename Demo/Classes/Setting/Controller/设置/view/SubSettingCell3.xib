@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="SubSettingCell3">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sub_setting3" translatesAutoresizingMaskIntoConstraints="NO" id="KK4-15-5El">
+                        <rect key="frame" x="10" y="10" width="20" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="ZAI-0R-LMh"/>
+                            <constraint firstAttribute="width" constant="20" id="sbn-jl-R7r"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="寄貨地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hgb-Hc-jRV">
+                        <rect key="frame" x="40" y="8" width="82" height="24"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <color key="textColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2UU-g4-WF6">
+                        <rect key="frame" x="324" y="2" width="41" height="36"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                        <state key="normal" title="編輯">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台北市太安區成安街100號6樓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCc-LW-cZO">
+                        <rect key="frame" x="40" y="47" width="177" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GGQ-l7-jyT">
+                        <rect key="frame" x="30" y="79.5" width="345" height="0.5"/>
+                        <color key="backgroundColor" white="0.87" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="swH-Sd-ofp"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="hgb-Hc-jRV" firstAttribute="leading" secondItem="KK4-15-5El" secondAttribute="trailing" constant="10" id="68b-CR-YL6"/>
+                    <constraint firstItem="2UU-g4-WF6" firstAttribute="centerY" secondItem="hgb-Hc-jRV" secondAttribute="centerY" id="6la-Uh-8fg"/>
+                    <constraint firstAttribute="trailing" secondItem="2UU-g4-WF6" secondAttribute="trailing" constant="10" id="ARM-lv-2VH"/>
+                    <constraint firstItem="hgb-Hc-jRV" firstAttribute="centerY" secondItem="KK4-15-5El" secondAttribute="centerY" id="Azb-Gs-jDb"/>
+                    <constraint firstItem="KK4-15-5El" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="Dx7-75-J7e"/>
+                    <constraint firstItem="GGQ-l7-jyT" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="30" id="IYf-db-lEK"/>
+                    <constraint firstAttribute="bottom" secondItem="GGQ-l7-jyT" secondAttribute="bottom" id="iWe-x2-P6E"/>
+                    <constraint firstItem="PCc-LW-cZO" firstAttribute="top" secondItem="hgb-Hc-jRV" secondAttribute="bottom" constant="15" id="oq6-aZ-EuB"/>
+                    <constraint firstItem="PCc-LW-cZO" firstAttribute="leading" secondItem="hgb-Hc-jRV" secondAttribute="leading" id="qyj-qo-T6e"/>
+                    <constraint firstItem="KK4-15-5El" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="tCn-kZ-751"/>
+                    <constraint firstAttribute="trailing" secondItem="GGQ-l7-jyT" secondAttribute="trailing" id="uXQ-Jk-dbh"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="131.15942028985509" y="144.64285714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="sub_setting3" width="51" height="48"/>
+    </resources>
+</document>

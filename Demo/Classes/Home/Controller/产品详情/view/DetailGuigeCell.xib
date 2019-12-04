@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="DetailGuigeCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="售賣" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OUr-eA-dDe">
+                        <rect key="frame" x="117.5" y="14" width="91" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="尺寸" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LLQ-1c-8I4">
+                        <rect key="frame" x="16" y="14" width="91.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="售出日期" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVr-Sa-bLN">
+                        <rect key="frame" x="218.5" y="14" width="91.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" white="0.87" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="PVr-Sa-bLN" secondAttribute="trailing" constant="10" id="5a6-Gc-atc"/>
+                    <constraint firstItem="LLQ-1c-8I4" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8Px-jY-Ku9"/>
+                    <constraint firstItem="OUr-eA-dDe" firstAttribute="width" secondItem="LLQ-1c-8I4" secondAttribute="width" id="DSN-Qg-EZb"/>
+                    <constraint firstItem="OUr-eA-dDe" firstAttribute="width" secondItem="LLQ-1c-8I4" secondAttribute="width" id="Haf-Tf-Lfr"/>
+                    <constraint firstItem="PVr-Sa-bLN" firstAttribute="height" secondItem="LLQ-1c-8I4" secondAttribute="height" id="Lax-tR-4Bd"/>
+                    <constraint firstItem="PVr-Sa-bLN" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Mp7-Uk-iDd"/>
+                    <constraint firstItem="OUr-eA-dDe" firstAttribute="height" secondItem="LLQ-1c-8I4" secondAttribute="height" id="Vcx-P3-jjw"/>
+                    <constraint firstItem="PVr-Sa-bLN" firstAttribute="leading" secondItem="OUr-eA-dDe" secondAttribute="trailing" constant="10" id="WbI-k4-r60"/>
+                    <constraint firstItem="LLQ-1c-8I4" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="YMl-7I-k6H"/>
+                    <constraint firstItem="PVr-Sa-bLN" firstAttribute="width" secondItem="LLQ-1c-8I4" secondAttribute="width" id="YTZ-pl-8d5"/>
+                    <constraint firstItem="OUr-eA-dDe" firstAttribute="leading" secondItem="LLQ-1c-8I4" secondAttribute="trailing" constant="10" id="g6F-YY-ZND"/>
+                    <constraint firstItem="OUr-eA-dDe" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="l3i-ne-DrU"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </tableViewCell>
+    </objects>
+</document>
