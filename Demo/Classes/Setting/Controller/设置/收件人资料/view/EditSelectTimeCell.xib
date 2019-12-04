@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="EditSelectTimeCell">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="375" height="90"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="選擇收貨時間" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YLv-7c-vzo">
+                        <rect key="frame" x="10" y="10" width="92" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bWk-9c-OJo">
+                        <rect key="frame" x="10" y="46" width="63" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" 早上" image="1242-收件人_14">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="actionSelectTimeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="2XG-7u-UWJ"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C2Y-gm-JLM">
+                        <rect key="frame" x="156" y="46" width="63" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" 下午" image="1242-收件人_11">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="actionSelectTimeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="PP1-bh-hSW"/>
+                        </connections>
+                    </button>
+                    <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LCX-A6-YUA">
+                        <rect key="frame" x="302" y="46" width="63" height="26"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <state key="normal" title=" 晚上" image="1242-收件人_11">
+                            <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </state>
+                        <connections>
+                            <action selector="actionSelectTimeBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="KDb-Ha-qk0"/>
+                        </connections>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Wyn-T0-BfN">
+                        <rect key="frame" x="0.0" y="89.5" width="375" height="0.5"/>
+                        <color key="backgroundColor" white="0.87" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="0.5" id="qv5-J6-xCg"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="LCX-A6-YUA" secondAttribute="trailing" constant="10" id="Aer-BL-eav"/>
+                    <constraint firstAttribute="trailing" secondItem="Wyn-T0-BfN" secondAttribute="trailing" id="FH5-nB-yDP"/>
+                    <constraint firstItem="C2Y-gm-JLM" firstAttribute="centerY" secondItem="bWk-9c-OJo" secondAttribute="centerY" id="Kgl-Wq-lNn"/>
+                    <constraint firstItem="bWk-9c-OJo" firstAttribute="top" secondItem="YLv-7c-vzo" secondAttribute="bottom" constant="18" id="Lnq-I8-fy4"/>
+                    <constraint firstItem="Wyn-T0-BfN" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Xoh-FJ-GDc"/>
+                    <constraint firstItem="LCX-A6-YUA" firstAttribute="centerY" secondItem="C2Y-gm-JLM" secondAttribute="centerY" id="ang-ru-chP"/>
+                    <constraint firstAttribute="bottom" secondItem="Wyn-T0-BfN" secondAttribute="bottom" id="axO-vf-UNF"/>
+                    <constraint firstItem="YLv-7c-vzo" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="dhW-NU-LiV"/>
+                    <constraint firstItem="YLv-7c-vzo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="m2m-C3-VJb"/>
+                    <constraint firstItem="C2Y-gm-JLM" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="mO2-bX-Ecv"/>
+                    <constraint firstItem="bWk-9c-OJo" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="mTJ-WS-e49"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="after_btn" destination="C2Y-gm-JLM" id="SxS-Oe-sj8"/>
+                <outlet property="dinner_btn" destination="LCX-A6-YUA" id="j55-je-ulN"/>
+                <outlet property="monerg_btn" destination="bWk-9c-OJo" id="eL2-Mg-qCV"/>
+            </connections>
+            <point key="canvasLocation" x="170" y="149"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="1242-收件人_11" width="28" height="26"/>
+        <image name="1242-收件人_14" width="28" height="26"/>
+    </resources>
+</document>

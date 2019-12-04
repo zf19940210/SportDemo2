@@ -16,6 +16,16 @@
 		5B00AB7A23965D2200ABCA90 /* SubSettingCell2.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B00AB7823965D2200ABCA90 /* SubSettingCell2.xib */; };
 		5B00AB7E23965D3100ABCA90 /* SubSettingCell3.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B00AB7C23965D3100ABCA90 /* SubSettingCell3.m */; };
 		5B00AB7F23965D3100ABCA90 /* SubSettingCell3.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B00AB7D23965D3100ABCA90 /* SubSettingCell3.xib */; };
+		5B21886323978DBE00E38FF2 /* EditAddressPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B21886123978DBE00E38FF2 /* EditAddressPage.m */; };
+		5B21886423978DBE00E38FF2 /* EditAddressPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B21886223978DBE00E38FF2 /* EditAddressPage.xib */; };
+		5B21886923978F1600E38FF2 /* EditHeaderCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B21886723978F1600E38FF2 /* EditHeaderCell.m */; };
+		5B21886A23978F1600E38FF2 /* EditHeaderCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B21886823978F1600E38FF2 /* EditHeaderCell.xib */; };
+		5B21886E23978F2400E38FF2 /* EditContentCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B21886C23978F2400E38FF2 /* EditContentCell.m */; };
+		5B21886F23978F2400E38FF2 /* EditContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B21886D23978F2400E38FF2 /* EditContentCell.xib */; };
+		5B21887323978F3000E38FF2 /* EditSelectCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B21887123978F3000E38FF2 /* EditSelectCell.m */; };
+		5B21887423978F3000E38FF2 /* EditSelectCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B21887223978F3000E38FF2 /* EditSelectCell.xib */; };
+		5B21887823978F3F00E38FF2 /* EditSelectTimeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B21887623978F3F00E38FF2 /* EditSelectTimeCell.m */; };
+		5B21887923978F3F00E38FF2 /* EditSelectTimeCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B21887723978F3F00E38FF2 /* EditSelectTimeCell.xib */; };
 		5B8CC3502391F948006C909E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8CC34F2391F948006C909E /* AppDelegate.m */; };
 		5B8CC3592391F948006C909E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8CC3572391F948006C909E /* Main.storyboard */; };
 		5B8CC35B2391F94C006C909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8CC35A2391F94C006C909E /* Assets.xcassets */; };
@@ -194,6 +204,21 @@
 		5B00AB7B23965D3100ABCA90 /* SubSettingCell3.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SubSettingCell3.h; sourceTree = "<group>"; };
 		5B00AB7C23965D3100ABCA90 /* SubSettingCell3.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SubSettingCell3.m; sourceTree = "<group>"; };
 		5B00AB7D23965D3100ABCA90 /* SubSettingCell3.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SubSettingCell3.xib; sourceTree = "<group>"; };
+		5B21886023978DBE00E38FF2 /* EditAddressPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditAddressPage.h; sourceTree = "<group>"; };
+		5B21886123978DBE00E38FF2 /* EditAddressPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditAddressPage.m; sourceTree = "<group>"; };
+		5B21886223978DBE00E38FF2 /* EditAddressPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditAddressPage.xib; sourceTree = "<group>"; };
+		5B21886623978F1600E38FF2 /* EditHeaderCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditHeaderCell.h; sourceTree = "<group>"; };
+		5B21886723978F1600E38FF2 /* EditHeaderCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditHeaderCell.m; sourceTree = "<group>"; };
+		5B21886823978F1600E38FF2 /* EditHeaderCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditHeaderCell.xib; sourceTree = "<group>"; };
+		5B21886B23978F2400E38FF2 /* EditContentCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditContentCell.h; sourceTree = "<group>"; };
+		5B21886C23978F2400E38FF2 /* EditContentCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditContentCell.m; sourceTree = "<group>"; };
+		5B21886D23978F2400E38FF2 /* EditContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditContentCell.xib; sourceTree = "<group>"; };
+		5B21887023978F3000E38FF2 /* EditSelectCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditSelectCell.h; sourceTree = "<group>"; };
+		5B21887123978F3000E38FF2 /* EditSelectCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditSelectCell.m; sourceTree = "<group>"; };
+		5B21887223978F3000E38FF2 /* EditSelectCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditSelectCell.xib; sourceTree = "<group>"; };
+		5B21887523978F3F00E38FF2 /* EditSelectTimeCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditSelectTimeCell.h; sourceTree = "<group>"; };
+		5B21887623978F3F00E38FF2 /* EditSelectTimeCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditSelectTimeCell.m; sourceTree = "<group>"; };
+		5B21887723978F3F00E38FF2 /* EditSelectTimeCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = EditSelectTimeCell.xib; sourceTree = "<group>"; };
 		5B8CC34B2391F948006C909E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8CC34E2391F948006C909E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B8CC34F2391F948006C909E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -514,6 +539,7 @@
 		5B00AB5D2395FBCE00ABCA90 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
+				5B21885C23978D6300E38FF2 /* 收件人资料 */,
 				5B00AB6B23965C9A00ABCA90 /* view */,
 				5B00AB6C23965CCA00ABCA90 /* SubSettingPage.h */,
 				5B00AB6D23965CCA00ABCA90 /* SubSettingPage.m */,
@@ -534,6 +560,52 @@
 				5B00AB7B23965D3100ABCA90 /* SubSettingCell3.h */,
 				5B00AB7C23965D3100ABCA90 /* SubSettingCell3.m */,
 				5B00AB7D23965D3100ABCA90 /* SubSettingCell3.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5B21885C23978D6300E38FF2 /* 收件人资料 */ = {
+			isa = PBXGroup;
+			children = (
+				5B21885F23978D8900E38FF2 /* view */,
+				5B21885E23978D8500E38FF2 /* model */,
+				5B21885D23978D7400E38FF2 /* controller */,
+			);
+			path = "收件人资料";
+			sourceTree = "<group>";
+		};
+		5B21885D23978D7400E38FF2 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B21886023978DBE00E38FF2 /* EditAddressPage.h */,
+				5B21886123978DBE00E38FF2 /* EditAddressPage.m */,
+				5B21886223978DBE00E38FF2 /* EditAddressPage.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		5B21885E23978D8500E38FF2 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5B21885F23978D8900E38FF2 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				5B21886623978F1600E38FF2 /* EditHeaderCell.h */,
+				5B21886723978F1600E38FF2 /* EditHeaderCell.m */,
+				5B21886823978F1600E38FF2 /* EditHeaderCell.xib */,
+				5B21886B23978F2400E38FF2 /* EditContentCell.h */,
+				5B21886C23978F2400E38FF2 /* EditContentCell.m */,
+				5B21886D23978F2400E38FF2 /* EditContentCell.xib */,
+				5B21887023978F3000E38FF2 /* EditSelectCell.h */,
+				5B21887123978F3000E38FF2 /* EditSelectCell.m */,
+				5B21887223978F3000E38FF2 /* EditSelectCell.xib */,
+				5B21887523978F3F00E38FF2 /* EditSelectTimeCell.h */,
+				5B21887623978F3F00E38FF2 /* EditSelectTimeCell.m */,
+				5B21887723978F3F00E38FF2 /* EditSelectTimeCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1492,11 +1564,13 @@
 			files = (
 				5BB18DFC2394BF91001DF6BD /* DetailGuigeCell.xib in Resources */,
 				5B8CC4B323920299006C909E /* HomePrductCell.xib in Resources */,
+				5B21886A23978F1600E38FF2 /* EditHeaderCell.xib in Resources */,
 				5B8CC4392391FDB9006C909E /* star_yellow.png in Resources */,
 				5B00AB7523965D1400ABCA90 /* SubSettingCell.xib in Resources */,
 				5BB18DF72394B128001DF6BD /* DetailSamePorductCell.xib in Resources */,
 				5B8CC4382391FDB9006C909E /* star_gray.png in Resources */,
 				5BB18E012394BFA8001DF6BD /* DetailSubGuigeCell.xib in Resources */,
+				5B21887923978F3F00E38FF2 /* EditSelectTimeCell.xib in Resources */,
 				5BB18DB923949FCA001DF6BD /* IntroductePage.xib in Resources */,
 				5B00AB7A23965D2200ABCA90 /* SubSettingCell2.xib in Resources */,
 				5B8CC35E2391F94C006C909E /* LaunchScreen.storyboard in Resources */,
@@ -1505,6 +1579,7 @@
 				5B8CC4572391FDBA006C909E /* TZImagePickerController.bundle in Resources */,
 				5B8CC4B623920299006C909E /* HomeHeaderCell.xib in Resources */,
 				5B8CC35B2391F94C006C909E /* Assets.xcassets in Resources */,
+				5B21886F23978F2400E38FF2 /* EditContentCell.xib in Resources */,
 				5B8CC4362391FDB9006C909E /* README.md in Resources */,
 				5B8CC4952391FF93006C909E /* HomeMainPage.xib in Resources */,
 				5B00AB7F23965D3100ABCA90 /* SubSettingCell3.xib in Resources */,
@@ -1518,8 +1593,10 @@
 				5BB18DBE2394A031001DF6BD /* FarvitonPage.xib in Resources */,
 				5BB18DC32394A049001DF6BD /* UserMehthodPage.xib in Resources */,
 				5B8CC3592391F948006C909E /* Main.storyboard in Resources */,
+				5B21886423978DBE00E38FF2 /* EditAddressPage.xib in Resources */,
 				5BB18DE52394A9E4001DF6BD /* DetailImgCell.xib in Resources */,
 				5BB18DC82394A2DD001DF6BD /* BuyProductCell.xib in Resources */,
+				5B21887423978F3000E38FF2 /* EditSelectCell.xib in Resources */,
 				5BB18DA923949F83001DF6BD /* SaleProductPage.xib in Resources */,
 				5B00AB7023965CCA00ABCA90 /* SubSettingPage.xib in Resources */,
 				5B8CC4C823920B89006C909E /* SettingHeaderCell.xib in Resources */,
@@ -1640,6 +1717,7 @@
 				5BB18DE42394A9E4001DF6BD /* DetailImgCell.m in Sources */,
 				5BB18DEE2394AA26001DF6BD /* DetailSameCell.m in Sources */,
 				5BB18E002394BFA8001DF6BD /* DetailSubGuigeCell.m in Sources */,
+				5B21886923978F1600E38FF2 /* EditHeaderCell.m in Sources */,
 				5B8CC47B2391FDBA006C909E /* LXCustomTextView.m in Sources */,
 				5B8CC4BA23920299006C909E /* HomeAllScrollCell.m in Sources */,
 				5BB18D8B23949EB0001DF6BD /* ProductPage.m in Sources */,
@@ -1672,6 +1750,7 @@
 				5B8CC4712391FDBA006C909E /* UIView+LXCornerdious.m in Sources */,
 				5B8CC44B2391FDB9006C909E /* CGXAddressModel.m in Sources */,
 				5B8CC4462391FDB9006C909E /* CGXPickerViewManager.m in Sources */,
+				5B21887323978F3000E38FF2 /* EditSelectCell.m in Sources */,
 				5B8CC43D2391FDB9006C909E /* YTKNetworkPrivate.m in Sources */,
 				5B8CC4942391FF93006C909E /* HomeMainPage.m in Sources */,
 				5B8CC4332391FDB9006C909E /* UITableView+FDKeyedHeightCache.m in Sources */,
@@ -1687,6 +1766,7 @@
 				5B8CC4802391FDBA006C909E /* UIView+Toast.m in Sources */,
 				5B8CC4662391FDBA006C909E /* UIView+SGPagingView.m in Sources */,
 				5B8CC4832391FDCB006C909E /* ZFNetworkTool.m in Sources */,
+				5B21887823978F3F00E38FF2 /* EditSelectTimeCell.m in Sources */,
 				5B00AB7E23965D3100ABCA90 /* SubSettingCell3.m in Sources */,
 				5BB18DCC2394A2EC001DF6BD /* SaleProductCell.m in Sources */,
 				5BB18DB323949FB7001DF6BD /* MoneyPage.m in Sources */,
@@ -1698,6 +1778,7 @@
 				5BB18E182394EB77001DF6BD /* UIWindow+WYWindowCategory.m in Sources */,
 				5BB18E232394F668001DF6BD /* ProductHeaderView.m in Sources */,
 				5B8CC45B2391FDBA006C909E /* TZPhotoPreviewCell.m in Sources */,
+				5B21886E23978F2400E38FF2 /* EditContentCell.m in Sources */,
 				5B8CC4482391FDB9006C909E /* CGXAddressPcikerView.m in Sources */,
 				5B8CC43E2391FDB9006C909E /* YTKBaseRequest.m in Sources */,
 				5B8CC4502391FDB9006C909E /* TZImageCropManager.m in Sources */,
@@ -1706,6 +1787,7 @@
 				5B8CC4CC23921490006C909E /* SearchProductCell.m in Sources */,
 				5B8CC4772391FDBA006C909E /* NSString+Extension.m in Sources */,
 				5B8CC4B823920299006C909E /* HomeTitleCell.m in Sources */,
+				5B21886323978DBE00E38FF2 /* EditAddressPage.m in Sources */,
 				5B8CC46E2391FDBA006C909E /* MBProgressHUD.m in Sources */,
 				5B8CC43C2391FDB9006C909E /* YTKChainRequest.m in Sources */,
 				5B8CC43F2391FDB9006C909E /* YTKBatchRequest.m in Sources */,
@@ -1779,7 +1861,7 @@
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/jusgang/Desktop/Swift5.1/项目/Demo/Demo/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
 					"$(inherited)",
@@ -1838,7 +1920,7 @@
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "/Users/jusgang/Desktop/Swift5.1/项目/Demo/Demo/PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -1860,16 +1942,17 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3;
-				DEVELOPMENT_TEAM = 444Q3S9TCF;
+				CURRENT_PROJECT_VERSION = 1.3.1;
+				DEVELOPMENT_TEAM = JV9BL442Q7;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhufeng.jdzp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -1882,21 +1965,22 @@
 			baseConfigurationReference = 72EE85E987486A08141CC910 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				CODE_SIGN_STYLE = Manual;
-				CURRENT_PROJECT_VERSION = 1.3;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1.3.1;
 				DEVELOPMENT_TEAM = JV9BL442Q7;
 				ENABLE_BITCODE = NO;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
 				INFOPLIST_FILE = Demo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3;
+				MARKETING_VERSION = 1.3.1;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhufeng.jdzp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = jdzp_plus_adhoc;
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

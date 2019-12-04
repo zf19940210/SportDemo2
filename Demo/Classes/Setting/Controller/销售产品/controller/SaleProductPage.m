@@ -4,6 +4,7 @@
 //  Copyright © 2019 zhufeng. All rights reserved.
 #import "SaleProductPage.h"
 #import "SaleProductCell.h"
+#import "BuyProductCell.h"
 @interface SaleProductPage ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,strong)NSMutableArray *allArr;
@@ -19,7 +20,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"銷售的產品";
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setLeftButton:[UIImage imageNamed:@"close"]];
     [self setupTableView];
+}
+-(void)onLeftBtnAction:(UIButton *)button
+{
+   [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)setupTableView
 {
@@ -28,7 +35,7 @@
    self.tableview.backgroundColor = [UIColor clearColor];
    self.tableview.showsHorizontalScrollIndicator = NO;
    self.tableview.showsVerticalScrollIndicator = NO;
-   [self.tableview registerNib:[UINib nibWithNibName:@"SaleProductCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"SaleProductCell"];
+   [self.tableview registerNib:[UINib nibWithNibName:@"BuyProductCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"BuyProductCell"];
    [self setViewRefreshTableView:self.tableview withHeaderAction:@selector(actionNewData) andFooterAction:@selector(actionMoreData) target:self];
 }
 -(void)actionNewData
@@ -47,7 +54,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   return self.allArr.count;
+   return 3;
+   //self.allArr.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -58,12 +66,22 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   return 80;
+   return 90;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   SaleProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SaleProductCell"];
+   BuyProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuyProductCell"];
    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+   cell.icon_img.image = [UIImage imageNamed:@"1242-購買紀錄_08"];
+   if (indexPath.row == 0 || indexPath.row == 1) {
+      cell.status_lab.text = @"未售";
+      cell.status_lab.textColor = [UIColor redColor];
+      cell.left_layout.constant = 90.0f;
+   }else{
+      cell.status_lab.text = @"已售";
+      cell.status_lab.textColor = RGB(59, 199, 89);
+      cell.left_layout.constant = 0.0f;
+   }
    return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath

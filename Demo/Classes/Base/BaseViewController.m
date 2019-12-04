@@ -64,19 +64,16 @@
 {
     return _leftBackButton;
 }
-
 #pragma mark - NavigationItem
 - (void)setLeftButton:(UIImage *)image
 {
     if (image) {
         UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
-        
         _leftBackButton = btn;
-        
         [btn setImage:image forState:UIControlStateNormal];
         // button size
         btn.frame = CGRectMake(0, 0, image.size.width, image.size.height);
-        btn.imageEdgeInsets = UIEdgeInsetsMake(0.0, -15.0, 0.0, 15.0);
+        btn.imageEdgeInsets = UIEdgeInsetsMake(0.0, 5.0, 0.0, -5.0);
         // button target
         [btn addTarget:self action:@selector(onLeftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
         

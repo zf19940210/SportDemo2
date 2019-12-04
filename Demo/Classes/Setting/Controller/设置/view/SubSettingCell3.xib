@@ -36,6 +36,9 @@
                         <state key="normal" title="編輯">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="actionEditBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="YRE-gR-Mie"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="台北市太安區成安街100號6樓" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCc-LW-cZO">
                         <rect key="frame" x="40" y="47" width="177" height="16"/>
@@ -69,6 +72,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="address_lab" destination="PCc-LW-cZO" id="XhB-MP-hvm"/>
+            </connections>
             <point key="canvasLocation" x="131.15942028985509" y="144.64285714285714"/>
         </tableViewCell>
     </objects>

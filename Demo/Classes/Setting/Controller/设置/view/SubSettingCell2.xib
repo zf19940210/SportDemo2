@@ -36,6 +36,9 @@
                         <state key="normal" title="编辑">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="actionEditBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="vgM-o3-kX5"/>
+                        </connections>
                     </button>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="目前没有记录" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="csx-gI-hYk">
                         <rect key="frame" x="40" y="47" width="80" height="16"/>
@@ -69,6 +72,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="jilu_lab" destination="csx-gI-hYk" id="2f0-PH-i4u"/>
+            </connections>
             <point key="canvasLocation" x="131.15942028985509" y="144.64285714285714"/>
         </tableViewCell>
     </objects>

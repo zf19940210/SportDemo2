@@ -35,18 +35,13 @@ static AFHTTPSessionManager *_session;
 {
     
     [_session GET:URLString parameters:parameters progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
-        
         if (success) {
-            
             success(responseObject);
-            
         }
         
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
         if (failure) {
-            
             failure(error);
-            
         }
     }];
 }
@@ -58,11 +53,8 @@ static AFHTTPSessionManager *_session;
             success(responseObject);
         }
     } failure:^(NSURLSessionDataTask * _Nullable task, NSError * _Nonnull error) {
-        
         if (failure) {
-            
             failure(error);
-            
         }
     }];
 }

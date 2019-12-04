@@ -6,6 +6,7 @@
 #import "SubSettingCell.h"
 #import "SubSettingCell2.h"
 #import "SubSettingCell3.h"
+#import "EditAddressPage.h"
 @interface SubSettingPage ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @end
@@ -77,14 +78,24 @@
    if (indexPath.row == 0) {
       SubSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SubSettingCell"];
       cell.selectionStyle = UITableViewCellSelectionStyleNone;
+      [cell setSubSettingCellBlock:^{
+
+      }];
       return cell;
    }else if(indexPath.row == 1 ){
       SubSettingCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"SubSettingCell2"];
       cell.selectionStyle = UITableViewCellSelectionStyleNone;
+      [cell setSubSettingCell2Block:^{
+
+      }];
       return cell;
    }else{
       SubSettingCell3 *cell = [tableView dequeueReusableCellWithIdentifier:@"SubSettingCell3"];
       cell.selectionStyle = UITableViewCellSelectionStyleNone;
+      [cell setSubSettingCell3Block:^{
+         EditAddressPage *subeditvc = [[EditAddressPage alloc]init];
+         [self.navigationController pushViewController:subeditvc animated:YES];
+      }];
       return cell;
    }
 }

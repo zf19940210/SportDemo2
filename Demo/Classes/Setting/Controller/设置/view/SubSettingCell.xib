@@ -70,6 +70,9 @@
                         <state key="normal" title="編輯">
                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </state>
+                        <connections>
+                            <action selector="actionEditBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="HVd-R2-DOT"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
@@ -93,6 +96,10 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="no_pay_lab" destination="mWx-ZF-GZa" id="7ga-wC-pze"/>
+                <outlet property="yin_pay_lab" destination="kME-i2-qyR" id="hG0-8d-eGr"/>
+            </connections>
             <point key="canvasLocation" x="131.15942028985509" y="144.64285714285714"/>
         </tableViewCell>
     </objects>

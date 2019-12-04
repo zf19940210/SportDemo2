@@ -19,7 +19,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     self.navigationItem.title = @"購買的產品";
+    self.view.backgroundColor = [UIColor whiteColor];
+    [self setLeftButton:[UIImage imageNamed:@"close"]];
     [self setupTableView];
+}
+-(void)onLeftBtnAction:(UIButton *)button
+{
+   [self.navigationController popViewControllerAnimated:YES];
 }
 -(void)setupTableView
 {
@@ -46,7 +52,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   return self.allArr.count;
+   return 3;
+   //self.allArr.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -57,12 +64,21 @@
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-   return 80;
+   return 90;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    BuyProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuyProductCell"];
    cell.selectionStyle = UITableViewCellSelectionStyleNone;
+  if (indexPath.row == 0 || indexPath.row == 1) {
+     cell.status_lab.text = @"未付";
+     cell.status_lab.textColor = [UIColor redColor];
+     cell.left_layout.constant = 90.0f;
+   }else{
+     cell.status_lab.text = @"已付";
+     cell.status_lab.textColor = RGB(59, 199, 89);
+     cell.left_layout.constant = 0.0f;
+   }
    return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
