@@ -76,7 +76,6 @@
         btn.imageEdgeInsets = UIEdgeInsetsMake(0.0, 5.0, 0.0, -5.0);
         // button target
         [btn addTarget:self action:@selector(onLeftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-        
         UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
         self.navigationItem.leftBarButtonItem = barItem;
     } else {
@@ -87,18 +86,15 @@
 {
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     _leftBackButton = btn;
-    
     [btn.titleLabel setFont:[UIFont systemFontOfSize:16.0f]];
     [btn setTitleColor:RGB(59, 199, 89) forState:UIControlStateNormal];
     [btn setTitle:text forState:UIControlStateNormal];
     [btn sizeToFit];
     // button target
     [btn addTarget:self action:@selector(onLeftBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-    
     UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
     self.navigationItem.leftBarButtonItem = barItem;
 }
-
 - (void)setRightButton:(UIImage *)image
 {
     if (image) {
@@ -109,11 +105,8 @@
         btn.imageEdgeInsets = UIEdgeInsetsMake(0.0, 4.0, 0.0, -4.0);
         // button target
         [btn addTarget:self action:@selector(onRightBtnAction:) forControlEvents:UIControlEventTouchUpInside];
-        
         UIBarButtonItem *barItem = [[UIBarButtonItem alloc] initWithCustomView:btn];
         self.navigationItem.rightBarButtonItem = barItem;
-
-            
     }else {
         self.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithCustomView:[[UIView alloc]init]];
     }
