@@ -1,27 +1,28 @@
-//  ProductPage.m
+//  OutProductPage.m
 //  Demo
-//  Created by 聚商码头 on 2019/12/2.
+//  Created by 聚商码头 on 2019/12/11.
 //  Copyright © 2019 zhufeng. All rights reserved.
-#import "ProductPage.h"
+#import "OutProductPage.h"
 #import "BuyProductCell.h"
-@interface ProductPage ()<UITableViewDelegate,UITableViewDataSource>
+#import "ProductStatusDetailPage.h"
+@interface OutProductPage () <UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
-@property (nonatomic,strong)NSMutableArray *allArr;
+@property (nonatomic,strong)NSMutableArray *dataArr;
 @end
-@implementation ProductPage
--(NSMutableArray *)allArr
+@implementation OutProductPage
+-(NSMutableArray *)dataArr
 {
-   if (!_allArr) {
-      _allArr = [NSMutableArray array];
+   if (!_dataArr) {
+      _dataArr = [NSMutableArray array];
    }
-   return _allArr;
+   return _dataArr;
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"購買的產品";
-    self.view.backgroundColor = [UIColor whiteColor];
-    [self setLeftButton:[UIImage imageNamed:@"close"]];
-    [self setupTableView];
+   self.navigationItem.title = @"銷售的記錄";
+   self.view.backgroundColor = [UIColor whiteColor];
+   [self setLeftButton:[UIImage imageNamed:@"close"]];
+   [self setupTableView];
 }
 -(void)onLeftBtnAction:(UIButton *)button
 {
@@ -43,8 +44,9 @@
 }
 -(void)actionMoreData
 {
-   
+
 }
+
 #pragma mark -- uitableviewdlegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -52,7 +54,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return self.allArr.count;
+   return 3;
+   //self.allArr.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -69,19 +72,29 @@
 {
    BuyProductCell *cell = [tableView dequeueReusableCellWithIdentifier:@"BuyProductCell"];
    cell.selectionStyle = UITableViewCellSelectionStyleNone;
-  if (indexPath.row == 0 || indexPath.row == 1) {
-     cell.status_lab.text = @"未付";
-     cell.status_lab.textColor = [UIColor redColor];
-     cell.left_layout.constant = 90.0f;
+   cell.icon_img.image = [UIImage imageNamed:@"1242-購買紀錄_08"];
+   if (indexPath.row == 0 || indexPath.row == 1) {
+      cell.status_lab.text = @"未售";
+      cell.status_lab.textColor = [UIColor redColor];
+      cell.left_layout.constant = 90.0f;
    }else{
-     cell.status_lab.text = @"已付";
-     cell.status_lab.textColor = RGB(59, 199, 89);
-     cell.left_layout.constant = 0.0f;
+      cell.status_lab.text = @"已售";
+      cell.status_lab.textColor = RGB(59, 199, 89);
+      cell.left_layout.constant = 0.0f;
    }
    return cell;
 }
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+   if (indexPath.row == 0 || indexPath.row == 1) {
+      ProductStatusDetailPage *detaivc = [[ProductStatusDetailPage alloc]init];
+      detaivc.status = 2;
+      [self.navigationController pushViewController:detaivc animated:YES];
+   }else{
+      ProductStatusDetailPage *detaivc = [[ProductStatusDetailPage alloc]init];
+      detaivc.status = 3;
+      [self.navigationController pushViewController:detaivc animated:YES];
+   }
 }
 @end

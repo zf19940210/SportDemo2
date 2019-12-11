@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface ProductStatusCell : UITableViewCell
 @property (weak, nonatomic) IBOutlet UILabel *status_lab;
+@property (weak, nonatomic) IBOutlet UILabel *sub_status_lab;
 
 @end
 

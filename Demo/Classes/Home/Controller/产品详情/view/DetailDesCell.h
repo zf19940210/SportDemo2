@@ -11,6 +11,10 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DetailDesCell : UITableViewCell
+@property (weak, nonatomic) IBOutlet UIButton *status_lab;
+@property (weak, nonatomic) IBOutlet UILabel *price_lab;
+@property (weak, nonatomic) IBOutlet UIButton *bottom_lab;
+@property (weak, nonatomic) IBOutlet UILabel *left_title_lab;
 
 @end
 

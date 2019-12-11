@@ -46,7 +46,6 @@
 {
 
 }
-
 #pragma mark -- uitableviewdlegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
@@ -54,8 +53,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-   return 3;
-   //self.allArr.count;
+   //return 3;
+  return  self.allArr.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {

@@ -14,8 +14,16 @@
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @property (nonatomic,strong)NSMutableArray *titleArr;
 @property (nonatomic,strong)NSMutableArray *contentArr;
+@property (nonatomic,strong)NSMutableArray *imagArr;
 @end
 @implementation ProductStatusDetailPage
+-(NSMutableArray *)imagArr
+{
+   if (!_imagArr) {
+      _imagArr = [NSMutableArray arrayWithObjects:@"detail_lunobo",@"detail_lunobo",@"detail_lunobo",@"detail_lunobo",@"detail_lunobo",nil];
+   }
+   return _imagArr;
+}
 -(NSMutableArray *)titleArr
 {
    if (!_titleArr) {
@@ -90,7 +98,7 @@
    [self.tableview registerNib:[UINib nibWithNibName:@"ProductStatusCell2" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ProductStatusCell2"];
    [self.tableview registerNib:[UINib nibWithNibName:@"ProductPayCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ProductPayCell"];
    [self.tableview registerNib:[UINib nibWithNibName:@"ProductEmptyCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"ProductEmptyCell"];
-   [self.tableview registerNib:[UINib nibWithData:@"DetailContentCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"DetailContentCell"];
+   [self.tableview registerNib:[UINib nibWithNibName:@"DetailContentCell" bundle:[NSBundle mainBundle]] forCellReuseIdentifier:@"DetailContentCell"];
 }
 
 #pragma mark -- uitableviewdlegate
@@ -162,7 +170,7 @@
       if (self.status == 0) {
          return 0;
       }else if(self.status == 1){
-         return 40;
+         return 50;
       }else if(self.status == 2){
          return 40;
       }else if(self.status == 3){
@@ -191,10 +199,14 @@
    if (indexPath.section == 0) {
       DetailImgCell *imagcell = [tableView dequeueReusableCellWithIdentifier:@"DetailImgCell"];
       imagcell.selectionStyle =  UITableViewCellSelectionStyleNone;
+      imagcell.imgArr = self.imagArr;
       return imagcell;
    }else if(indexPath.section == 1){
       DetailDesCell *descell = [tableView dequeueReusableCellWithIdentifier:@"DetailDesCell"];
       descell.selectionStyle =  UITableViewCellSelectionStyleNone;
+      descell.left_title_lab.text = @"價格:";
+      descell.left_title_lab.textColor =  RGB(59, 199, 89);
+      descell.bottom_lab.hidden = YES;
       return descell;
    }else if(indexPath.section == 2){
       ProductStatusCell *statuscell = [tableView dequeueReusableCellWithIdentifier:@"ProductStatusCell"];
@@ -206,7 +218,22 @@
       return detailcell;
    }else if(indexPath.section == 4){
       ProductStatusCell *statuscell = [tableView dequeueReusableCellWithIdentifier:@"ProductStatusCell"];
-           statuscell.selectionStyle = UITableViewCellSelectionStyleNone;
+      statuscell.selectionStyle = UITableViewCellSelectionStyleNone;
+      if (self.status == 0) {
+         statuscell.status_lab.text = @"付款狀態:已支付";
+      }else if(self.status == 1){
+         statuscell.status_lab.text = @"付款狀態:";
+         statuscell.sub_status_lab.text = @"未支付";
+      }else if(self.status == 2){
+         statuscell.status_lab.text = @"購買者付款狀態:";
+         statuscell.sub_status_lab.text = @"未支付";
+      }else if(self.status == 3){
+         statuscell.status_lab.text = @"購買者付款狀態:";
+         statuscell.sub_status_lab.text = @"已支付";
+      }else{
+         statuscell.status_lab.text = @"";
+         statuscell.sub_status_lab.text = @"";
+      }
       return statuscell;
    }else if(indexPath.section == 5){
       if (self.status == 0) {
@@ -220,10 +247,12 @@
       }else if(self.status == 2){
          ProductStatusCell2 *statuscell = [tableView dequeueReusableCellWithIdentifier:@"ProductStatusCell2"];
          statuscell.selectionStyle = UITableViewCellSelectionStyleNone;
+         statuscell.title_lab.text = @"被查看次數:26次";
          return statuscell;
       }else if(self.status == 3){
          ProductStatusCell2 *statuscell = [tableView dequeueReusableCellWithIdentifier:@"ProductStatusCell2"];
          statuscell.selectionStyle = UITableViewCellSelectionStyleNone;
+         statuscell.title_lab.text = @"2018-06-06 18:30";
          return statuscell;
       }else{
          ProductEmptyCell *emptycell = [tableView dequeueReusableCellWithIdentifier:@"ProductEmptyCell"];
@@ -246,6 +275,7 @@
       }else if(self.status == 3){
          ProductStatusCell2 *statuscell = [tableView dequeueReusableCellWithIdentifier:@"ProductStatusCell2"];
          statuscell.selectionStyle = UITableViewCellSelectionStyleNone;
+         statuscell.title_lab.text = @"物流資訊:運送中";
          return statuscell;
       }else{
          ProductEmptyCell *emptycell = [tableView dequeueReusableCellWithIdentifier:@"ProductEmptyCell"];
@@ -256,6 +286,7 @@
       return nil;
    }
 }
+
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    [tableView deselectRowAtIndexPath:indexPath animated:YES];

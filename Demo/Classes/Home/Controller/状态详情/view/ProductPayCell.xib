@@ -18,21 +18,27 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W3b-r2-ctG">
-                        <rect key="frame" x="16" y="5" width="288" height="35"/>
+                        <rect key="frame" x="10" y="5" width="300" height="35"/>
                         <color key="backgroundColor" white="0.90000000000000002" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <state key="normal" title="線上支付">
                             <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         </state>
+                        <connections>
+                            <action selector="actionPayBtn:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="Act-Xb-4N5"/>
+                        </connections>
                     </button>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="W3b-r2-ctG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="DZc-Hp-Fgb"/>
-                    <constraint firstAttribute="trailing" secondItem="W3b-r2-ctG" secondAttribute="trailing" constant="16" id="FV6-Bh-6w0"/>
+                    <constraint firstItem="W3b-r2-ctG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="DZc-Hp-Fgb"/>
+                    <constraint firstAttribute="trailing" secondItem="W3b-r2-ctG" secondAttribute="trailing" constant="10" id="FV6-Bh-6w0"/>
                     <constraint firstAttribute="bottom" secondItem="W3b-r2-ctG" secondAttribute="bottom" constant="4" id="H2J-jo-bZ3"/>
                     <constraint firstItem="W3b-r2-ctG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="OQS-42-xRc"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="aW0-zy-SZf"/>
+            <connections>
+                <outlet property="pay_btn" destination="W3b-r2-ctG" id="Fg1-8i-B4W"/>
+            </connections>
             <point key="canvasLocation" x="131.8840579710145" y="144.64285714285714"/>
         </tableViewCell>
     </objects>

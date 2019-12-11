@@ -13,7 +13,10 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
+   self.pay_btn.layer.cornerRadius = 8.0f;
+   self.pay_btn.layer.masksToBounds = YES;
+}
+- (IBAction)actionPayBtn:(UIButton *)sender {
 }
 
 - (void)setSelected:(BOOL)selected animated:(BOOL)animated {

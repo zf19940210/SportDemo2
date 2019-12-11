@@ -36,6 +36,10 @@
 		5B5431DE239F920000C25A44 /* ProductPayCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5431DC239F920000C25A44 /* ProductPayCell.xib */; };
 		5B5431E2239F950800C25A44 /* ProductEmptyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5431E0239F950800C25A44 /* ProductEmptyCell.m */; };
 		5B5431E3239F950800C25A44 /* ProductEmptyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B5431E1239F950800C25A44 /* ProductEmptyCell.xib */; };
+		5B7797E923A0966000574055 /* BuyProductPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7797E723A0966000574055 /* BuyProductPage.m */; };
+		5B7797EA23A0966000574055 /* BuyProductPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7797E823A0966000574055 /* BuyProductPage.xib */; };
+		5B7797F923A096CD00574055 /* OutProductPage.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B7797F723A096CD00574055 /* OutProductPage.m */; };
+		5B7797FA23A096CD00574055 /* OutProductPage.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B7797F823A096CD00574055 /* OutProductPage.xib */; };
 		5B8CC3502391F948006C909E /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B8CC34F2391F948006C909E /* AppDelegate.m */; };
 		5B8CC3592391F948006C909E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B8CC3572391F948006C909E /* Main.storyboard */; };
 		5B8CC35B2391F94C006C909E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B8CC35A2391F94C006C909E /* Assets.xcassets */; };
@@ -244,6 +248,12 @@
 		5B5431DF239F950800C25A44 /* ProductEmptyCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ProductEmptyCell.h; sourceTree = "<group>"; };
 		5B5431E0239F950800C25A44 /* ProductEmptyCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ProductEmptyCell.m; sourceTree = "<group>"; };
 		5B5431E1239F950800C25A44 /* ProductEmptyCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProductEmptyCell.xib; sourceTree = "<group>"; };
+		5B7797E623A0966000574055 /* BuyProductPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BuyProductPage.h; sourceTree = "<group>"; };
+		5B7797E723A0966000574055 /* BuyProductPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BuyProductPage.m; sourceTree = "<group>"; };
+		5B7797E823A0966000574055 /* BuyProductPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BuyProductPage.xib; sourceTree = "<group>"; };
+		5B7797F623A096CD00574055 /* OutProductPage.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OutProductPage.h; sourceTree = "<group>"; };
+		5B7797F723A096CD00574055 /* OutProductPage.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = OutProductPage.m; sourceTree = "<group>"; };
+		5B7797F823A096CD00574055 /* OutProductPage.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OutProductPage.xib; sourceTree = "<group>"; };
 		5B8CC34B2391F948006C909E /* Demo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Demo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B8CC34E2391F948006C909E /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5B8CC34F2391F948006C909E /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -564,6 +574,8 @@
 		5B00AB5D2395FBCE00ABCA90 /* 设置 */ = {
 			isa = PBXGroup;
 			children = (
+				5B7797E523A0963E00574055 /* 出售记录 */,
+				5B7797E423A0962F00574055 /* 购买资讯 */,
 				5B21885C23978D6300E38FF2 /* 收件人资料 */,
 				5B00AB6B23965C9A00ABCA90 /* view */,
 				5B00AB6C23965CCA00ABCA90 /* SubSettingPage.h */,
@@ -677,6 +689,74 @@
 				5B5431DF239F950800C25A44 /* ProductEmptyCell.h */,
 				5B5431E0239F950800C25A44 /* ProductEmptyCell.m */,
 				5B5431E1239F950800C25A44 /* ProductEmptyCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5B7797E423A0962F00574055 /* 购买资讯 */ = {
+			isa = PBXGroup;
+			children = (
+				5B7797EE23A0968100574055 /* view */,
+				5B7797ED23A0967B00574055 /* model */,
+				5B7797EC23A0966A00574055 /* controller */,
+			);
+			path = "购买资讯";
+			sourceTree = "<group>";
+		};
+		5B7797E523A0963E00574055 /* 出售记录 */ = {
+			isa = PBXGroup;
+			children = (
+				5B7797F023A0968C00574055 /* view */,
+				5B7797EF23A0968800574055 /* model */,
+				5B7797EB23A0966400574055 /* controller */,
+			);
+			path = "出售记录";
+			sourceTree = "<group>";
+		};
+		5B7797EB23A0966400574055 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B7797F623A096CD00574055 /* OutProductPage.h */,
+				5B7797F723A096CD00574055 /* OutProductPage.m */,
+				5B7797F823A096CD00574055 /* OutProductPage.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		5B7797EC23A0966A00574055 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				5B7797E623A0966000574055 /* BuyProductPage.h */,
+				5B7797E723A0966000574055 /* BuyProductPage.m */,
+				5B7797E823A0966000574055 /* BuyProductPage.xib */,
+			);
+			path = controller;
+			sourceTree = "<group>";
+		};
+		5B7797ED23A0967B00574055 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5B7797EE23A0968100574055 /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		5B7797EF23A0968800574055 /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		5B7797F023A0968C00574055 /* view */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1649,8 +1729,10 @@
 				5BB18DEA2394AA0D001DF6BD /* DetailDesCell.xib in Resources */,
 				5BB18D8C23949EB0001DF6BD /* ProductPage.xib in Resources */,
 				5B8CC4572391FDBA006C909E /* TZImagePickerController.bundle in Resources */,
+				5B7797FA23A096CD00574055 /* OutProductPage.xib in Resources */,
 				5B8CC4B623920299006C909E /* HomeHeaderCell.xib in Resources */,
 				5B8CC35B2391F94C006C909E /* Assets.xcassets in Resources */,
+				5B7797EA23A0966000574055 /* BuyProductPage.xib in Resources */,
 				5B5431CF239F8F8600C25A44 /* ProductStatusDetailPage.xib in Resources */,
 				5B21886F23978F2400E38FF2 /* EditContentCell.xib in Resources */,
 				5B8CC4362391FDB9006C909E /* README.md in Resources */,
@@ -1832,6 +1914,7 @@
 				5B8CC4712391FDBA006C909E /* UIView+LXCornerdious.m in Sources */,
 				5B8CC44B2391FDB9006C909E /* CGXAddressModel.m in Sources */,
 				5B8CC4462391FDB9006C909E /* CGXPickerViewManager.m in Sources */,
+				5B7797E923A0966000574055 /* BuyProductPage.m in Sources */,
 				5B21887323978F3000E38FF2 /* EditSelectCell.m in Sources */,
 				5B8CC43D2391FDB9006C909E /* YTKNetworkPrivate.m in Sources */,
 				5B8CC4942391FF93006C909E /* HomeMainPage.m in Sources */,
@@ -1870,6 +1953,7 @@
 				5B8CC4772391FDBA006C909E /* NSString+Extension.m in Sources */,
 				5B8CC4B823920299006C909E /* HomeTitleCell.m in Sources */,
 				5B21886323978DBE00E38FF2 /* EditAddressPage.m in Sources */,
+				5B7797F923A096CD00574055 /* OutProductPage.m in Sources */,
 				5B8CC46E2391FDBA006C909E /* MBProgressHUD.m in Sources */,
 				5B8CC43C2391FDB9006C909E /* YTKChainRequest.m in Sources */,
 				5B8CC43F2391FDB9006C909E /* YTKBatchRequest.m in Sources */,
@@ -2022,9 +2106,9 @@
 			baseConfigurationReference = 00BC1AB6E6B0F68FAE2A17E2 /* Pods-Demo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.1;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.3.2;
 				DEVELOPMENT_TEAM = JV9BL442Q7;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
@@ -2034,10 +2118,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhufeng.jdzp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = jdzp_plus_dev;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -2047,9 +2131,9 @@
 			baseConfigurationReference = 72EE85E987486A08141CC910 /* Pods-Demo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1.3.1;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.3.2;
 				DEVELOPMENT_TEAM = JV9BL442Q7;
 				ENABLE_BITCODE = NO;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/Demo/PrefixHeader.pch";
@@ -2059,10 +2143,10 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.3.1;
+				MARKETING_VERSION = 1.3.2;
 				PRODUCT_BUNDLE_IDENTIFIER = com.zhufeng.jdzp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = jdzp_plus_adhoc;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

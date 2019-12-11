@@ -1,24 +1,17 @@
-//  ProductPage.m
+//  BuyProductPage.m
 //  Demo
-//  Created by 聚商码头 on 2019/12/2.
+//  Created by 聚商码头 on 2019/12/11.
 //  Copyright © 2019 zhufeng. All rights reserved.
-#import "ProductPage.h"
+#import "BuyProductPage.h"
 #import "BuyProductCell.h"
-@interface ProductPage ()<UITableViewDelegate,UITableViewDataSource>
+#import "ProductStatusDetailPage.h"
+@interface BuyProductPage ()<UITableViewDataSource,UITableViewDelegate>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
-@property (nonatomic,strong)NSMutableArray *allArr;
 @end
-@implementation ProductPage
--(NSMutableArray *)allArr
-{
-   if (!_allArr) {
-      _allArr = [NSMutableArray array];
-   }
-   return _allArr;
-}
+@implementation BuyProductPage
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.navigationItem.title = @"購買的產品";
+    self.navigationItem.title = @"購買的記錄";
     self.view.backgroundColor = [UIColor whiteColor];
     [self setLeftButton:[UIImage imageNamed:@"close"]];
     [self setupTableView];
@@ -43,7 +36,7 @@
 }
 -(void)actionMoreData
 {
-   
+
 }
 #pragma mark -- uitableviewdlegate
 -(NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
@@ -52,7 +45,8 @@
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-  return self.allArr.count;
+   return 3;
+   //self.allArr.count;
 }
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
@@ -83,5 +77,14 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+   if (indexPath.row == 0 || indexPath.row == 1) {
+      ProductStatusDetailPage *detaivc = [[ProductStatusDetailPage alloc]init];
+      detaivc.status = 1;
+      [self.navigationController pushViewController:detaivc animated:YES];
+   }else{
+      ProductStatusDetailPage *detaivc = [[ProductStatusDetailPage alloc]init];
+      detaivc.status = 0;
+      [self.navigationController pushViewController:detaivc animated:YES];
+   }
 }
 @end

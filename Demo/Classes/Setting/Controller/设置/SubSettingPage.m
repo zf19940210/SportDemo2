@@ -7,6 +7,8 @@
 #import "SubSettingCell2.h"
 #import "SubSettingCell3.h"
 #import "EditAddressPage.h"
+#import "OutProductPage.h"
+#import "BuyProductPage.h"
 @interface SubSettingPage ()<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UITableView *tableview;
 @end
@@ -79,14 +81,16 @@
       SubSettingCell *cell = [tableView dequeueReusableCellWithIdentifier:@"SubSettingCell"];
       cell.selectionStyle = UITableViewCellSelectionStyleNone;
       [cell setSubSettingCellBlock:^{
-
+         BuyProductPage *buyproductvc = [[BuyProductPage alloc]init];
+         [self.navigationController pushViewController:buyproductvc animated:YES];
       }];
       return cell;
    }else if(indexPath.row == 1 ){
       SubSettingCell2 *cell = [tableView dequeueReusableCellWithIdentifier:@"SubSettingCell2"];
       cell.selectionStyle = UITableViewCellSelectionStyleNone;
       [cell setSubSettingCell2Block:^{
-
+         OutProductPage *outprouductvc = [[OutProductPage alloc]init];
+         [self.navigationController pushViewController:outprouductvc animated:YES];
       }];
       return cell;
    }else{
