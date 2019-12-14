@@ -26,7 +26,7 @@
 -(NSMutableArray *)titleArr
 {
    if (!_titleArr) {
-      _titleArr = [NSMutableArray arrayWithObjects:@"型號",@"顏色種類",@"零售价",@"發行日期", nil];
+      _titleArr = [NSMutableArray arrayWithObjects:@"型號",@"顏色種類",@"零售價",@"發行日期", nil];
    }
    return _titleArr;
 }

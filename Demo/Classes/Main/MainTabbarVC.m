@@ -27,7 +27,6 @@
     [[UITabBar appearance] setTranslucent:NO];
     [self setupAllChildController];
 }
-
 -(void)setupAllChildController
 {
     HomeMainPage *homevc = [[HomeMainPage alloc]init];
@@ -53,5 +52,4 @@
     //添加子控制器
     [self addChildViewController:nav];
 }
-
 @end

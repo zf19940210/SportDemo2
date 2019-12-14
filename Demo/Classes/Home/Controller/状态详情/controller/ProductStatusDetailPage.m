@@ -27,7 +27,7 @@
 -(NSMutableArray *)titleArr
 {
    if (!_titleArr) {
-      _titleArr = [NSMutableArray arrayWithObjects:@"型號",@"顏色種類",@"零售价",@"發行日期", nil];
+      _titleArr = [NSMutableArray arrayWithObjects:@"型號",@"顏色種類",@"零售價",@"發行日期", nil];
    }
    return _titleArr;
 }
@@ -214,6 +214,8 @@
       return statuscell;
    }else if(indexPath.section == 3){
       DetailContentCell *detailcell = [tableView dequeueReusableCellWithIdentifier:@"DetailContentCell"];
+      detailcell.title_lab.text = self.titleArr[indexPath.row];
+      detailcell.content_lab.text = self.contentArr[indexPath.row];
       detailcell.selectionStyle = UITableViewCellSelectionStyleNone;
       return detailcell;
    }else if(indexPath.section == 4){
@@ -286,7 +288,6 @@
       return nil;
    }
 }
-
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
 {
    [tableView deselectRowAtIndexPath:indexPath animated:YES];
