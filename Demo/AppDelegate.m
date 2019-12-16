@@ -4,15 +4,23 @@
 //  Copyright © 2019 zhufeng. All rights reserved.
 #import "AppDelegate.h"
 #import "MainTabbarVC.h"
+#import "LoginAndRegisterPage.h"
 @interface AppDelegate ()
 @end
 @implementation AppDelegate
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    sleep(2);
+    sleep(3);
     self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
     self.window.backgroundColor = [UIColor whiteColor];
-    MainTabbarVC *tabbarvc = [[MainTabbarVC alloc]init];
-    self.window.rootViewController = tabbarvc;
+    BOOL isFist = [[NSUserDefaults standardUserDefaults]boolForKey:@"isFirst"];
+    if (!isFist) {
+       LoginAndRegisterPage *loginvc = [[LoginAndRegisterPage alloc]init];
+       UINavigationController *nav = [[UINavigationController alloc]initWithRootViewController:loginvc];
+       self.window.rootViewController = nav;
+    }else{
+      MainTabbarVC *tabbarvc = [[MainTabbarVC alloc]init];
+      self.window.rootViewController = tabbarvc;
+   }
     [self.window makeKeyAndVisible];
     return YES;
 }
