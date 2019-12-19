@@ -101,7 +101,7 @@
          titlecell.selectionStyle = UITableViewCellSelectionStyleNone;
          titlecell.title_lab.text = @"一般球鞋";
           [titlecell setHomeTitleCellBlock:^{
-             [SVProgressHUD showInfoWithStatus:@"查看全部"];
+             [self.tabBarController setSelectedIndex:1];
           }];
           return titlecell;
        }else{
@@ -115,7 +115,7 @@
           titlecell.selectionStyle = UITableViewCellSelectionStyleNone;
           titlecell.title_lab.text = @"特殊球鞋";
           [titlecell setHomeTitleCellBlock:^{
-             [SVProgressHUD showInfoWithStatus:@"查看全部"];
+             [self.tabBarController setSelectedIndex:1];
           }];
            return titlecell;
        }else{
